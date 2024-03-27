@@ -1,0 +1,93 @@
+/* CSS untuk membuat latar belakang bergerak */
+body {
+    background: url('tekno.jpg') fixed;
+    background-size: cover;
+    animation: animate_bg 30s linear infinite; /* Animasi untuk membuat latar belakang bergerak */
+  }
+  
+  @keyframes animate_bg {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* CSS untuk styling form dan ringkasan belanja */
+  .container {
+    background-color: rgba(260, 260, 260, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white (0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Tombol Submit */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Styling ringkasan belanja */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Animasi ketika hover di tombol */
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px white (0, 0, 0, 0.2);
+  }
+  
+  /* Animasi ringkasan belanja */
+  .ringkasan-belanja {
+    background-color: blue (255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue (0, 0, 0, 0.3);
+    animation: animate_summary 5s ease-out;
+  }
+  
+  @keyframes animate_summary {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
